@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "bfb7fdf4-5e1e-436a-ba40-f9fa78a26409",
+		"name": "TransactionMaster",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"transactionName\": \"Sample Transaction\",\n  \"transactionCode\": \"TRN123\",\n  \"transactionDescription\": \"This is a sample transaction\",\n  \"movementCodes\": [\n    {\n      \"movementCode\": \"MOV1\",\n      \"movementDescription\": \"Movement 1\",\n      \"movementEffect\": \"Effect 1\"\n    },\n    {\n      \"movementCode\": \"MOV2\",\n      \"movementDescription\": \"Movement 2\",\n      \"movementEffect\": \"Effect 2\"\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/transaction/addTransaction"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/v1/transaction/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Transaction",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/v1/transaction/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Movement Code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"movementCode\": \"MOV3\",\n    \"movementDescription\": \"Movement 1\",\n    \"movementEffect\": \"Effect 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/transactions/1/addMovementCode"
+			},
+			"response": []
+		},
+		{
+			"name": "Get MovementCode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/v1/movementcodes/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movement",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/v1/movementcodes/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Movement Codes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/v1/movementcodes"
+			},
+			"response": []
+		}
+	]
+}
