@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: INDIA
+Build-Jdk: 17.0.9
+Implementation-Title: transaction-movement-master
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.transaction.master
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/transaction-mo
+ vement-master/
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: INDIA
+Build-Jdk: 17.0.10
+Implementation-Title: crud-application
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.assignment.crud.application
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/crud-applicati
+ on/
+Created-By: Maven Integration for Eclipse
+
